@@ -26,19 +26,18 @@ public class ejercicio9 {
                 break;
             default:
                 System.out.println("Usuario incorrecto");
-                break;
+                System.exit(0);
         }             
         
-        Scanner passwords = new Scanner(System.in);
         System.out.println("ingresa la contraseña:");
-        passwordIngresada = passwords.nextLine();
+        passwordIngresada = usuarios.nextLine();
 
         switch(passwordIngresada){
             case "elotito":
                 System.out.println("contraseña correcta");
                 break;
             default:
-                System.out.println("contraseña incorrecta ");
+                System.out.println("contraseña incorrecta");
                 break;
         }         
         }

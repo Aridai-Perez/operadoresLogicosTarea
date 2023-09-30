@@ -16,7 +16,7 @@ public class ejercicio11 {
         numero = teclado.nextInt();
               
         for(int i = numero; i > 0; i--){
-            if(numero % i == 0 ){
+            if(numero % i == 0){
                 contador++;
             }
         }

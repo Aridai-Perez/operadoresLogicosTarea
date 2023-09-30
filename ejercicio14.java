@@ -8,14 +8,48 @@
 public class ejercicio14 {
     public static void main(String[] args) {
         
-        int[] alumnos = {70, 60, 100, 40, 80, 75};
+        Alumnos[] alumno = new Alumnos[5];
         
-        for (int i = 0; i < alumnos.length; i++){
-            if (alumnos[i] >= 70){
-                System.out.println("aprobado");
-            }else{
-                System.out.println("reprobado");
+        alumno[0] = new Alumnos ("juan", 60);
+        alumno[1] = new Alumnos ("miguel", 100);
+        alumno[2] = new Alumnos ("lucia", 70);
+        alumno[3] = new Alumnos ("panchito", 65);
+        alumno[4] = new Alumnos ("ester", 87);
+        
+        for (Alumnos Alumno : alumno) {
+            if (Estatus(Alumno.getCalificacion())){
+                System.out.println("alumn@: "+ Alumno.getNombre() + ", calificacion: " + Alumno.getCalificacion() + ", estatus: aprobado");            
+            } else {
+                System.out.println("alumn@: "+ Alumno.getNombre() + ", calificacion: " + Alumno.getCalificacion() + ", estatus: aprobado");
+               
             }
-        }
+        }            
     }
+    
+    public static boolean Estatus (int calificacion) {
+        return calificacion >= 70;
+    }    
+        
+    static class Alumnos {
+    
+        private String nombre;
+        private int calificacion;
+        
+        public Alumnos (String nombre, int calificacion){
+            
+            this.nombre = nombre;
+            this.calificacion = calificacion;
+
+        }
+
+        public String getNombre() {
+            return nombre;
+        }
+
+        public int getCalificacion() {
+            return calificacion;
+        }
+        
+    }
+   
 }

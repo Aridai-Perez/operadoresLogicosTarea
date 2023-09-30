@@ -18,11 +18,9 @@ public class ejercicio18 {
         System.out.println("Ingrese la medida del primer lado de su triangulo:");
         lado1 = teclado.nextInt();
         
-        Scanner teclado1 = new Scanner(System.in);
         System.out.println("Ingrese la medida del segundo lado de su triangulo:");
         lado2 = teclado.nextInt();
-        
-        Scanner teclado2 = new Scanner(System.in);
+
         System.out.println("Ingrese la medida del tercer lado de su triangulo:");
         lado3 = teclado.nextInt();
         

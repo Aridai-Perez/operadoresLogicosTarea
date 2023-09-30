@@ -28,9 +28,8 @@ public class ejercicio15 {
                 System.out.println("Perfecto, continuemos!");
         }
         
-        Scanner teclado = new Scanner(System.in);
         System.out.println("ingresa tu edad, por favor: ");
-        edad = teclado.nextInt();
+        edad = teclado2.nextInt();
         
         if (edad >= 18){
             System.out.println("Eres mayor de edad, si cuentas con una INE, puedes votar!!");

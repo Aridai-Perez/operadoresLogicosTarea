@@ -23,6 +23,8 @@ public class ejercicio19 {
         } else {
             System.out.println("tu numero se encuentra entre 100 y -100");
         }
+        
+        
     }
            
 }

@@ -16,9 +16,10 @@ public class ejercicio17 {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Ingrese una frase por favor: ");
         fraseUsuario = teclado.nextLine();
+        String contenedorFrase = fraseUsuario.toLowerCase();
         
-        boolean palabraContenedora = fraseUsuario.contains("java");
-        boolean palabraContenedora2 = fraseUsuario.contains ("phyton");
+        boolean palabraContenedora = contenedorFrase.contains("java");
+        boolean palabraContenedora2 = contenedorFrase.contains ("phyton");
         
         if (palabraContenedora == true){
             System.out.println("tu frase " + "'" + fraseUsuario + "'" + " contiene la palabra Java");

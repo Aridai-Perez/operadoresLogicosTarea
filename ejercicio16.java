@@ -17,11 +17,11 @@ public class ejercicio16 {
         numero = teclad.nextInt();
         
         if ((numero % 3 == 0)&&(numero % 5 == 0)){
-            System.out.println("tu numero es divisible entre 3 y 5");
+            System.out.println("tu numero es multiplo de 3 y 5");
         } else if (numero % 3 == 0){
-            System.out.println("tu numero solo divisible entre 3");
+            System.out.println("tu numero solo es multiplo de 3");
         } else {
-            System.out.println("tu numero no es divisible entre 3 o 5");
+            System.out.println("tu numero no es multiplo de 3 o 5");
         }
        
     }

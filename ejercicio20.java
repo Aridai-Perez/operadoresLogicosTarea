@@ -17,26 +17,25 @@ public class ejercicio20 {
         Scanner teclado = new Scanner(System.in);
         System.out.println("Ingresa tu edad:");
         edad = teclado.nextInt();
-        
+        teclado.nextLine();
+
         if (edad < 18){
-            System.out.println("No puedes ingresar a la sala VIP, eres menor de edad");
+            System.out.println("Parece que eres menor de edad, tienes una invitacion especial?");
+                confirmacionUsuario = teclado.nextLine();
+            switch (confirmacionUsuario){
+                case "si": 
+                    System.out.println("Bienvenido a la sala VIP");
+                    break;
+                case "no":
+                    System.out.println("Lo siento no puedes ingresar");
+                    break;
+        }
         } else {
             System.out.println("Puedes ingresar a la sala VIP al ser mayor de edad, BIENVENIDO!");
-            System.exit(0);
         }
         
-        Scanner teclado2 = new Scanner(System.in);
-        System.out.println("Tienes una invitacion especial? ");
-        confirmacionUsuario = teclado2.nextLine();
         
-        switch (confirmacionUsuario){
-            case "si": 
-                System.out.println("Bienvenido a la sala VIP");
-                break;
-            case "no":
-                System.out.println("Lo siento no puedes ingresar");
-                break;
-        }
+
             
     }
 }
